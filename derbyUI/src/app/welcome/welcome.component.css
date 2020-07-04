@@ -1,0 +1,9 @@
+.imageSide {  
+    width: 750px;
+    height: 750px;
+    border-width: 25px;   border-color: white;   border-style: solid;
+} 
+
+.bottom_login_register_card{
+    background-color: aqua;
+}

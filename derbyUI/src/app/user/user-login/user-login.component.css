@@ -1,0 +1,29 @@
+.container-styles{
+	position: relative; 
+  top: 75px;
+  left: 100px;
+	width:50%
+}
+
+
+.link-underline{
+   color:#337ab7;
+    text-decoration: underline;
+}
+
+.error{
+    color: red;
+    position:relative;
+    left:50px;
+}
+
+.bg-custom{
+	background-color: rgb(70, 88, 248)
+}
+
+ .logo{
+  width: 80px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;margin-left: auto;margin-right: auto
+ }
