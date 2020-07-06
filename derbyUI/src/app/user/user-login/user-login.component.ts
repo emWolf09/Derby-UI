@@ -15,6 +15,7 @@ export class UserLoginComponent implements OnInit {
   valid:boolean;
   isLoggedIn:boolean;
   errorMessageFromBackend:string;
+
   constructor(private router:Router,private loginService:UserLoginService) {
     this.valid=true;
     this.isLoggedIn=false;
@@ -36,5 +37,6 @@ export class UserLoginComponent implements OnInit {
       error=>this.errorMessageFromBackend = <string>error
     );
     console.log(this.errorMessageFromBackend+" "+this.user.name);
+    this.router.navigate(['/profile']);
   }
 }
