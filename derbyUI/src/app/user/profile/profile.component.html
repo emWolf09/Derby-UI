@@ -20,3 +20,39 @@
         </mat-card>
     </div>
 </div>
+
+
+<br>
+<div class="container-fluid">
+<div class="row">
+    <div class="hidden-sm  col-md-2 col-lg-2"></div>
+    <div class="   col-md-8 col-lg-8">
+        <mat-grid-list [cols]="breakpoint" rowHeight="1:1.2" (window:resize)="onResize($event)">
+            <mat-grid-tile class="postCardClass" *ngFor="let post of allPosts">
+
+                <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px">
+                    <mat-card  class ="eachPost" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" >
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <mat-card-title>i.a_m.mayank786</mat-card-title>
+                            <mat-card-subtitle>Uploaded - 9/06/1997</mat-card-subtitle>
+                        </mat-card-header>
+                      <img class = "imageOfPost" mat-card-image [src]="imgUrl" alt="postImage">
+                      <mat-card-footer style="margin-left: 1px;">
+                        <mat-card-subtitle style="font-weight: 500;"> {{likeCount}}<mat-icon inline=true>favorite_border</mat-icon>  {{post}}
+                            <a href="/following" class = "anchorFollow"><mat-icon inline=true>comment</mat-icon></a> 
+                        </mat-card-subtitle>    
+                    </mat-card-footer>
+                    </mat-card>
+                </div>
+
+            </mat-grid-tile>
+          </mat-grid-list>
+    </div>
+    <div class="hidden-sm  col-md-2 col-lg-2"></div>
+</div>
+</div>
+
+
+
+  

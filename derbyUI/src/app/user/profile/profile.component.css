@@ -1,23 +1,24 @@
 .profile_card{
     width: 700px;
     height: 300px;
-    margin-top: 50px;
     margin: 0 auto;
+    margin-top: 50px;
+    background-color: azure;
 }
 
 .profileImage{
-    background-color: blanchedalmond;
-    width: 250px;
-    height: 250px;
-    margin-left: 35px;
-    border-radius: 50%;
-    margin-top: 35px;
-    border: 5px solid;
-    border-color: #b6361a;
+    width: 220px;
+    height: 220px;
+    margin-left: 50px;
+    border-radius: 40%;
+    margin-top: 45px;
+    border: 2px solid;
+    border-color: black;
 }
 
 .cardClass{
     margin-top: 80px;
+    margin-right: 20px;
 }
 
 .anchorFollow{
@@ -37,3 +38,24 @@
     display: table-cell;
     margin-left: 10px;
   }
+
+.eachPost{
+   
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.imageOfPost{
+    border: 1px solid;
+    border-color: black;
+    width: 260px;
+    height: 200px;
+}
+
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  
