@@ -1,1 +1,22 @@
-<p>top-feed works!</p>
+<mat-card *ngFor="let post of allPosts" class="mx-auto post_card" >
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>i.a_m.mayank786</mat-card-title>
+        <mat-card-subtitle>Uploaded - 9/06/1997</mat-card-subtitle>
+    </mat-card-header>
+    <img class="imageOfPost" mat-card-image [src]="imgUrl" alt="postImage">
+    <!-- <mat-card-footer style="margin-left: 1px;">
+        <mat-card-subtitle style="font-weight: 500;"> {{likeCount}}<mat-icon inline=true>favorite_border</mat-icon>
+            {{post}}
+            <a href="/following" class="anchorFollow">
+                <mat-icon inline=true>comment</mat-icon>
+            </a>
+        </mat-card-subtitle>
+    </mat-card-footer> -->
+</mat-card>
+
+<br>
+<br>
+<br>
+<br>
+<br>

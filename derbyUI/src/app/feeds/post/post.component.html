@@ -1,1 +1,28 @@
-<p>post works!</p>
+<div class="container row">
+    <div class="col-md-12">
+        <h1>Upload Image</h1>
+    </div>
+</div>
+
+<div class="container row" *ngIf = "imagePresent">
+    <div class="col-md-6">
+        <img [src]="imageSrc|| 'http://placehold.it/180'" height="400px" width=" 100%">
+    </div>
+</div>
+<br>
+<div class="container row">
+    <div class="col-md-6">
+        <input type="file" (change)="onFileChanged($event)">
+
+    </div>
+    <div class="col-md-6">
+        <input type="button" (click)="onUpload()" value="upload">
+    </div>
+</div>
+
+<hr />
+<div class="container row">
+    <div class="col-md-12">
+        <div *ngIf=message>{{message}}</div>
+    </div>
+</div>
